@@ -1,25 +1,38 @@
-[![CI](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml)
-## Template for Python projects 
+# Individual Project #3: Databricks ETL (Extract Transform Load) Pipeline
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+## Overview
+This README provides my operations and instructions on setting up a data pipeline in Databricks. The small project reads data from a CSV file, performs simple transformations, and writes the result to a Parquet file.
 
-Things included are:
+ reference: https://docs.databricks.com/en/getting-started/data-pipeline-get-started.html
 
-* `Makefile`
+The dataset used in this example is a subset of the Million Song Dataset( http://millionsongdataset.com/pages/getting-dataset/#subset)
 
-* `Pytest`
+# Data Pipeline Project
 
-* `pandas`
+## Steps
 
-* `Pylint`
+1. **Create Cluster**: Set up a Databricks cluster to process the data.
+    ![alt text](./images/create_cluster.PNG)
 
-* `Dockerfile`
+2. **Ingest Data**: Load the subset of the Million Song Dataset into Databricks.
+    ![alt text](./images/ingest_data.PNG)
 
-* `GitHub copilot`
+3. **Prepare Data**: Perform data cleaning and preparation.
+    ![alt text](./images/prepare_data.PNG)
 
-* `jupyter` and `ipython` 
+4. **Analyse Data**: Conduct data analysis to derive insights.
+    ![alt text](./images/analyse_data.PNG)
 
-* A base set of libraries for devops and web
+5. **Workspace Overview**: View all notebooks used in this project.
+    ![alt text](./images/workspace.PNG)
 
-* `githubactions` 
+6. **Workflow**: Overview of the complete data pipeline.
+    ![alt text](./images/workflow.PNG)
 
+## Dataset Reference
+
+- The dataset used is a subset of the [Million Song Dataset](http://millionsongdataset.com/pages/getting-dataset/#subset).
+
+## Documentation Reference
+
+- The steps followed in this project are based on the [Databricks documentation](https://docs.databricks.com/en/getting-started/data-pipeline-get-started.html).
